@@ -1,0 +1,272 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    color: rgb(138, 138, 138);
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*------------*/
+/* link styles*/
+/*------------*/
+a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+/*---------------------*/
+/* nav & profile styles*/
+/*---------------------*/
+.name{
+    font-weight: 50px;
+    font-size: 1.5em;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+nav{
+    text-decoration: none;
+    font-size: 1.10em;
+    font-weight: bold;
+    display: flex;
+    flex-wrap:
+}
+
+li{
+    padding: 15px;
+    list-style: none;
+}
+
+.profile-image{
+    padding: 15px 0px;
+    max-width: 70%;
+}
+
+.bio{
+    padding: 30px 15px 30px 15px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#top,
+.name,
+.titles,
+h3,
+b{
+    color:rgb(60, 60, 60);
+}
+
+#top,
+.contact-container,
+footer{
+    background-color: rgb(249, 249, 249);
+}
+
+/*-----------------*/
+/* portfolio styles*/
+/*-----------------*/
+
+.portfolio{
+    padding: 10px 0px 30px 0px;
+}
+
+img{
+    max-width: 90%;
+}
+
+.titles{
+    font-size: 0.8em;
+}
+
+#portfolio{
+    padding: 40px 0px 30px 0px;
+}
+
+h3{
+    font-style:normal 100px;
+    padding-top:30px;
+}
+
+.description
+{
+    padding: 17px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+/*--------------*/
+/*contact styles*/
+/*--------------*/
+
+.contact-container{
+    padding: 10px 10px 10px 10px;
+}
+
+#contact{
+    padding: 40px 0px 20px 0px;
+}
+
+.contact-description{
+    padding: 10px 10px 30px 10px;
+}
+
+.contact-info{
+    padding: 10px;
+}
+
+.contact-content{
+    padding-bottom: 40px;
+}
+
+hr{
+    border:0px;
+    height:1px;
+    background-color: rgb(228, 228, 228);
+}
+
+/*-------------*/
+/*footer styles*/
+/*-------------*/
+
+footer{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px 10px 30px 10px;
+    font-size: 0.9em;
+}
+
+footer p{
+    font-weight:50px:
+}
+
+div b{
+    color: rgb(138, 138, 138);
+}
+
+.bottom-nav{
+    visibility:;
+}
+
+/*------------*/
+/*phone styles*/
+/*------------*/
+@media screen and (min-width: 320px){
+
+nav{
+    flex-direction: column;
+}
+
+.return-top b{
+    text-align: right;
+}
+.nav-item-bottom{
+    display:none;
+}
+}
+
+/*-------------*/
+/*tablet styles*/
+/*-------------*/
+
+@media screen and (min-width: 768px){
+/*=====================*/
+/* nav & profile styles*/
+/*=====================*/
+.name{
+    padding-top: 50px;
+}
+
+nav{
+    font-size: 0.8em;
+
+}
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.li{
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.bio{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bio p{
+    padding: 0px 45px;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.profile-image{
+    padding:0px;
+    max-width: 40%;
+}
+
+/*================*/
+/*portfolio styles*/
+/*================*/
+
+img{
+    max-width: 30%;
+}
+
+.portfolio{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    padding: 10px 15px 30px 15px;
+}
+
+.portfolio-item{
+    flex: 1 0 33%;
+    font-size: 1em;
+    margin: 0 5px;
+}
+
+.portfolio-item img{
+    max-width: 100%;
+}
+    /*footer styles*/
+.contact-description{
+    font: lighter 100px;
+    font-size: 1.1em;
+    padding: 10px 135px 30px 135px;
+}
+
+.return-top{
+    display: none;
+}
+
+.bottom-nav{
+    display: flex;
+    flex-direction: row;
+    visibility: visible;
+}
+
+.nav-item-bottom{
+    display: inline;
+    padding: 0px 10px 0 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    flex-direction: row;
+}
+}
