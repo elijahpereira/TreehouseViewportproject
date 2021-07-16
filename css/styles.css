@@ -41,7 +41,7 @@ nav{
     font-size: 1.10em;
     font-weight: bold;
     display: flex;
-    flex-wrap:
+    flex-direction: column;
 }
 
 li{
@@ -60,7 +60,6 @@ li{
     line-height: 1.5;
 }
 
-#top,
 .name,
 .titles,
 h3,
@@ -111,7 +110,7 @@ h3{
 /*--------------*/
 
 .contact-container{
-    padding: 10px 10px 10px 10px;
+    padding: 10px 15px 10px 15px;
 }
 
 #contact{
@@ -145,7 +144,7 @@ footer{
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding:10px 10px 30px 10px;
+    padding:10px 15px 30px 15px;
     font-size: 0.9em;
 }
 
@@ -157,23 +156,28 @@ div b{
     color: rgb(138, 138, 138);
 }
 
-.bottom-nav{
-    visibility:;
-}
+img{
+        transition: 1s;
+    }
+    
+    img:hover{
+        transform: scale(1.1);
+    }
 
+
+#top{
+    color:rgb(99, 0, 0);
+}
 /*------------*/
 /*phone styles*/
 /*------------*/
 @media screen and (min-width: 320px){
 
-nav{
-    flex-direction: column;
+#top{
+    font-weight: bold;
 }
 
-.return-top b{
-    text-align: right;
-}
-.nav-item-bottom{
+.bottom-nav{
     display:none;
 }
 }
@@ -211,7 +215,7 @@ ul{
 }
 
 .bio p{
-    padding: 0px 45px;
+    padding: 0px 45px 0px 0px;
     font-size: 1.1em;
     text-align: left;
 }
@@ -245,7 +249,11 @@ img{
 .portfolio-item img{
     max-width: 100%;
 }
-    /*footer styles*/
+
+/*=============*/
+/*footer styles*/
+/*=============*/
+
 .contact-description{
     font: lighter 100px;
     font-size: 1.1em;
@@ -264,9 +272,67 @@ img{
 
 .nav-item-bottom{
     display: inline;
-    padding: 0px 10px 0 10px;
+    padding: 0px 0px 20px 20px;
     font-size: 0.8em;
     font-weight: bold;
     flex-direction: row;
 }
+}
+
+/*---------------*/
+/* desktop styles*/
+/*---------------*/
+
+@media screen and (min-width: 1024px){
+
+    .name{
+        text-align: left;
+        padding: 80px 0px 0px 50px;
+    }
+
+    ul{
+        justify-content:flex-end;
+        margin: -35px 0px 0px 0px;
+        padding: 0px 35px;
+    }
+
+    .bio{
+        padding: 30px 50px 40px 50px;
+    }
+
+    .bio p{
+        padding: 0px 40px 0px 0px;
+        font-size: 1.3em;
+    }
+
+    .portfolio{
+        padding: 10px 50px 30px 50px;
+    }
+
+    .portfolio-item {
+        flex: 1 0 30%;
+    }
+
+    .contact-container{
+        padding: 10px 50px 10px 50px;
+    }
+
+    .contact-description{
+        font-size: 1.2em;
+        padding: 10px 200px 30px 200px;
+    }
+
+    .bottom-footer{
+        margin:0px;
+    }
+
+    footer{
+        padding: 10px 50px 10px 50px;
+    }
+    
+    .bottom-footer{
+        padding: 0px 0px 0px 0px;
+    }
+    
+
 }
