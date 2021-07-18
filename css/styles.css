@@ -30,7 +30,6 @@ a:visited{
 /* nav & profile styles*/
 /*---------------------*/
 .name{
-    font-weight: 50px;
     font-size: 1.5em;
     padding-top: 30px;
     padding-bottom: 25px;
@@ -67,7 +66,6 @@ b{
     color:rgb(60, 60, 60);
 }
 
-#top,
 .contact-container,
 footer{
     background-color: rgb(249, 249, 249);
@@ -94,7 +92,7 @@ img{
 }
 
 h3{
-    font-style:normal 100px;
+
     padding-top:30px;
 }
 
@@ -148,10 +146,6 @@ footer{
     font-size: 0.9em;
 }
 
-footer p{
-    font-weight:50px:
-}
-
 div b{
     color: rgb(138, 138, 138);
 }
@@ -165,17 +159,14 @@ img{
     }
 
 
-#top{
+.return-top {
     color:rgb(99, 0, 0);
+    font-weight: bold;
 }
 /*------------*/
 /*phone styles*/
 /*------------*/
 @media screen and (min-width: 320px){
-
-#top{
-    font-weight: bold;
-}
 
 .bottom-nav{
     display:none;
